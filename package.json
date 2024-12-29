@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx serverest",
-    "cy:run": "npx cypress run"
+    "cy:open": "npx cypress open",
+    "cy:headless": "npx cypress run",
+    "cy:dashboard": "npx cypress run --record --key 14a0d941-28eb-4aaa-84de-d24208628d30",
+    "onServer": "sudo npx serverest"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
   "dependencies": {
     "cypress": "^13.6.0",
     "joi": "^17.12.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.3.0"
   }
 }
